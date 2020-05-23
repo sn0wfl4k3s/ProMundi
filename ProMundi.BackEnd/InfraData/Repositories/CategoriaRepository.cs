@@ -5,7 +5,10 @@ using System.Text;
 
 namespace InfraData.Repositories
 {
-    public class CategoriaRepository : RepositoryBase<Usuario>
+    public class CategoriaRepository : RepositoryBase<Categoria>
     {
+        public  CategoriaRepository(ApplicationDbContext context) : base(context)
+        {
+        }
     }
 }
