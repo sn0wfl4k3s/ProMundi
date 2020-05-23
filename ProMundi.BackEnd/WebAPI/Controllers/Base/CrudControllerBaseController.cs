@@ -51,9 +51,9 @@ namespace WebAPI.Controllers.Base
         }
 
         [HttpPut("{id}")]
-        public virtual async Task<IActionResult> Update([FromBody] TViewModel model)
+        public virtual async Task<IActionResult> Update([FromBody] TViewModelCadastro model)
         {
-            var objectToUpdate = _mapper.Map<TViewModel, T>(model);
+            var objectToUpdate = _mapper.Map<TViewModelCadastro, T>(model);
 
             await _repositoryBase.Update(objectToUpdate);
 

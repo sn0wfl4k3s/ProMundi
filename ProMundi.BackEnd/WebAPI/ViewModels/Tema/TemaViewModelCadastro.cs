@@ -7,7 +7,6 @@ namespace WebAPI.ViewModels.Tema
 {
     public class TemaViewModelCadastro
     {
-        public int Id { get; set; }
         public string Titulo { get; set; }
         public DateTime DataCriacao { get; set; }
     }

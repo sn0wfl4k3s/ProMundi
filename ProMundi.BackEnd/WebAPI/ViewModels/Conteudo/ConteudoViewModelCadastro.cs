@@ -10,15 +10,14 @@ namespace WebAPI.ViewModels.Conteudo
 {
     public class ConteudoViewModelCadastro
     {
-        public int Id { get; set; }
         public string Titulo { get; set; }
         public string Descricao { get; set; }
         public DateTime DataCriacao { get; set; }
 
         public UsuarioViewModel Usuario { get; set; }
 
-        public IList<CategoriaViewModel> Categorias { get; set; }
+        public IList<CategoriaViewModelCadastro> Categorias { get; set; }
 
-        public IList<TemaViewModel> Temas { get; set; }
+        public IList<TemaViewModelCadastro> Temas { get; set; }
     }
 }
