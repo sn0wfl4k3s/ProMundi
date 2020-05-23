@@ -6,5 +6,10 @@ namespace WebAPI.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
+        [HttpGet]
+        public IActionResult Get ()
+        {
+            return Ok("test");
+        }
     }
 }
