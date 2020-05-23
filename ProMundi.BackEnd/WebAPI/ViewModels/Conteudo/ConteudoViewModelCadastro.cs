@@ -12,7 +12,7 @@ namespace WebAPI.ViewModels.Conteudo
         public string Descricao { get; set; }
         public DateTime DataCriacao { get; set; }
 
-        public UsuarioViewModel Usuario { get; set; }
+        public UsuarioViewModelCadastro UsuarioId { get; set; }
 
         public IList<CategoriaViewModelCadastro> Categorias { get; set; }
 
