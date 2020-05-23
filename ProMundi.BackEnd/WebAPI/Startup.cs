@@ -7,6 +7,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using AutoMapper;
 using InfraData;
+using Domain.Entidades;
+using InfraData.Repositories;
+using Domain.Base;
 
 namespace WebAPI
 {
@@ -29,6 +32,13 @@ namespace WebAPI
             var connection = Configuration["ConexaoSqlite:SqliteConnectionString"];
 
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite(connection));
+            
+            services.AddScoped<IRepositoryBase<Categoria>, CategoriaRepository>();
+            services.AddScoped<IRepositoryBase<Conteudo>, ConteudoRepository>();
+            services.AddScoped<IRepositoryBase<Comentario>, ComentarioRepository>();
+            services.AddScoped<IRepositoryBase<Tema>, TemaRepository>();
+            services.AddScoped<IRepositoryBase<Usuario>, UsuarioRepository>();
+
 
             services.AddSwaggerGen(c =>
             {
