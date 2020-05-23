@@ -13,7 +13,7 @@ namespace InfraData
 
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
-        public DbSet<CategoriaConteudo> CategoriaConteudos { get; set; }
+        public DbSet<ConteudoCategoria> CategoriaConteudos { get; set; }
         public DbSet<CategoriaUsuario> CategoriaUsuarios { get; set; }
         public DbSet<Comentario> Comentarios { get; set; }
         public DbSet<Conteudo> Conteudos { get; set; }
@@ -24,12 +24,13 @@ namespace InfraData
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.ApplyConfiguration(new UsuarioMap());
+            modelBuilder.ApplyConfiguration(new ConteudoCategoriaMap());
             modelBuilder.ApplyConfiguration(new CategoriaMap());
             modelBuilder.ApplyConfiguration(new CategoriaUsuarioMap());
             modelBuilder.ApplyConfiguration(new ComentarioMap());
             modelBuilder.ApplyConfiguration(new ConteudoMap());
-            modelBuilder.ApplyConfiguration(new TemaMap());
-            modelBuilder.ApplyConfiguration(new UsuarioMap());
+            modelBuilder.ApplyConfiguration(new ConteudoTemaMap());
         }
     }
 }

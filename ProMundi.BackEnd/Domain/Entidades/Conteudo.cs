@@ -18,7 +18,7 @@ namespace Domain.Entidades
         public int UsuarioId { get; set; }
         public Usuario Usuario { get; set; }
         
-        public List<CategoriaConteudo> ConteudoCategorias { get; set; }
+        public List<ConteudoCategoria> ConteudoCategorias { get; set; }
 
         public List<ConteudoTema> ConteudoTemas { get; set; }
         public List<Comentario> Comentarios { get; set; }

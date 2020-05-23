@@ -19,9 +19,8 @@ namespace InfraData.Mapings
 
             builder.HasMany(x => x.UsuarioCategorias).WithOne(x => x.Usuario);
 
-            builder.HasMany(x => x.Conteudos);
+            builder.HasMany(x => x.Conteudos).WithOne(x => x.Usuario);
 
-           
         }
 
     }
