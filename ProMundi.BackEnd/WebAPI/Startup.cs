@@ -1,3 +1,8 @@
+using AutoMapper;
+using Domain.Base;
+using Domain.Entidades;
+using InfraData;
+using InfraData.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -5,11 +10,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using AutoMapper;
-using InfraData;
-using Domain.Entidades;
-using InfraData.Repositories;
-using Domain.Base;
 
 namespace WebAPI
 {
@@ -32,7 +32,7 @@ namespace WebAPI
             var connection = Configuration["ConexaoSqlite:SqliteConnectionString"];
 
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite(connection));
-            
+
             services.AddScoped<IRepositoryBase<Categoria>, CategoriaRepository>();
             services.AddScoped<IRepositoryBase<Conteudo>, ConteudoRepository>();
             services.AddScoped<IRepositoryBase<Comentario>, ComentarioRepository>();
