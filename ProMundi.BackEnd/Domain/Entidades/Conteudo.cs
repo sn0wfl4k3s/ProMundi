@@ -12,6 +12,7 @@ namespace Domain.Entidades
         public string VideoPath { get; set; }
         public string PodcastPath { get; set; }
         public string UrlImgPost { get; set; }
+        public bool Favorito { get; set; }
         public DateTime DataCriacao { get; set; }
         public DateTime? DataEdicao { get; set; }
 

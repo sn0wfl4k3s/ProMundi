@@ -7,9 +7,9 @@ namespace Domain.Base
     public interface IRepositoryBase<T> where T : class
     {
         Task<List<T>> GetAllAsync();
-        T GetById(Guid id);
+        T GetById(int id);
         Task AddAsync(T model);
         Task Update(T model);
-        Task Delete(Guid id);
+        Task Delete(int id);
     }
 }

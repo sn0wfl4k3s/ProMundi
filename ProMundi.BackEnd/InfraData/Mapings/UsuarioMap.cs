@@ -16,6 +16,7 @@ namespace InfraData.Mapings
             builder.Property(x => x.Nome).HasMaxLength(255).IsRequired();
             builder.Property(x => x.Email).HasMaxLength(255).IsRequired();
             builder.Property(x => x.Senha).HasMaxLength(255).IsRequired();
+            builder.Property(x => x.SeProfissional).IsRequired();
 
             builder.HasMany(x => x.UsuarioCategorias).WithOne(x => x.Usuario);
 

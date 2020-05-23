@@ -21,7 +21,7 @@ namespace InfraData.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public Task Delete(Guid id)
+        public Task Delete(int id)
         {
             _context.Set<T>().Remove(GetById(id));
             _context.SaveChanges();
@@ -34,7 +34,7 @@ namespace InfraData.Repositories
             return _context.Set<T>().ToListAsync();
         }
 
-        public virtual T GetById(Guid id)
+        public virtual T GetById(int id)
         {
             return _context.Set<T>().Find(id);
         }
