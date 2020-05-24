@@ -6,6 +6,7 @@ import { PrincipalModule } from './principal/principal.module';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule  } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     PrincipalModule,
     SharedModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
   ],
