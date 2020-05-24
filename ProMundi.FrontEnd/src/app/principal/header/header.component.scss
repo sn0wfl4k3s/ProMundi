@@ -1,0 +1,29 @@
+$titulo_color: #9c8f64 ;
+$texto_color:#383838 ;
+$fundo_padrao: #f5f5f5 ;
+$bg_botao_color: #dbcfdf ;
+
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $fundo_padrao;
+    padding: 10px;
+    .marca{
+        font-size: 60px;
+        font-family: 'Eczar', serif;
+    }
+    .menu {
+        ol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 60px;
+            font-size: 20px;
+            color:$texto_color;
+            li {
+                margin-left: 20px;
+            }
+        }
+    }
+}
