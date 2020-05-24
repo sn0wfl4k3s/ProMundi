@@ -1,0 +1,68 @@
+.navbar-saude {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    .box-outer {
+        .img-box {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-image: url("../../../assets/WhatsApp_Image_2020-05-22_at_23-removebg-preview.png");
+            background-position: center;
+            background-size: cover;
+        
+        }
+        
+        width: 200px;
+        border: 1px solid #383838;
+        text-align: center;
+        .titulo-tema {
+            margin-left: 10px;
+            font-size: 23px;
+            color: #9c8f64;
+        }
+    }
+
+
+    .botao-saude {
+        border-color: #383838 !important;
+    }
+}
+
+.conteudo-saude {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    >*{
+        flex: 1;
+    }
+    .quadro-profissionais {
+        margin-right: 50px;
+        h1 {
+            font-size: 28px;
+            text-align: initial;
+            margin-bottom: 20px;
+        }
+    }
+    .conteudo {
+        .fa-star:hover {
+            color: yellow;
+            cursor: pointer;
+        }
+        .fa-coffee:hover {
+            color:brown;
+            cursor: pointer;
+        }
+    }
+    .publicacoes {
+        p {
+            padding: 30px;
+            text-align: initial;
+            line-height: 22px;
+            padding: 20px;
+            font-size: 15px;
+            color: #383838;
+        }
+    }
+}

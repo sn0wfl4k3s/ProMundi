@@ -1,0 +1,76 @@
+<div class="navbar-saude">
+  <div class="box-outer">
+    <div class="box d-flex align-items-center">
+      <div class="img-box">
+
+      </div>
+      <div class="titulo-tema">
+        <span>Covid-19</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="font-size: 35px;color:#9c8f64">
+    <span>Saúde</span>
+  </div>
+
+  <div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="procurar" aria-label="Search">
+      <button class="botao-saude btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search"
+          style="color: #383838"></i> </button>
+    </form>
+  </div>
+</div>
+<div class="conteudo-saude">
+  <div class="quadro-profissionais">
+    <h1>Profissionais</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of usuarios">
+          <td><i class="fa fa-user"></i></td>
+          <td><a routerLink="/perfil">{{item.nome}}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="conteudo">
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/KWp5orIEH-Y" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="comentarios">
+      <div class="d-flex justify-content-between my-2">
+        <div class="d-flex">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div>
+          <i class="fa fa-coffee"></i>
+        </div>
+      </div>
+      <div>
+        <form class="">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="deixe seu comentario">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="publicacoes">
+    <p>
+      A convite do Secad e da Artmed, o médico infectologista Eduardo Sprinz, chefe do serviço de Infectologia do
+      Hospital de Clínicas de Porto Alegre, gravou um vídeo direcionado aos profissionais de saúde para esclarecer
+      dúvidas sobre a pandemia do coronavírus. Ele dá orientações sobre como os profissionais devem se proteger durante
+      os atendimentos para evitar o contágio da Covid-19.
+    </p>
+  </div>
+</div>

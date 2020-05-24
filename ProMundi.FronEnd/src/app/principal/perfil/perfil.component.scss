@@ -1,0 +1,22 @@
+.dados-usuario {
+    padding: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    .descricao {
+        display: flex;
+        ol {
+            padding: 20px;
+            text-align: initial;
+            font-size: 19px;
+        }
+        li:not(:first-child){
+            margin-top: 20px;
+        }
+    }
+}
+.publicar {
+    display: flex;
+    >*{
+        flex:1;
+    }
+}

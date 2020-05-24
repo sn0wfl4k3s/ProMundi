@@ -1,0 +1,57 @@
+$titulo_color: #9c8f64 ;
+$texto_color:#383838 ;
+$fundo_padrao: #f5f5f5 ;
+$bg_botao_color: #dbcfdf ;
+
+.home-box {
+  
+    padding-top:60px;
+    img {
+        position: relative;
+    };
+    .tema {
+        h1 {
+            font-size: 60px;
+            color: $titulo_color;
+        }
+    }
+}
+.temas {
+    max-width: 300px;
+    font-size: 30px;
+    padding: 10px;
+    position: absolute !important;
+    background-color: $bg_botao_color;
+    text-align: center;
+}
+
+.tema-1{
+    position: absolute !important;
+    bottom: 220px;
+    left: 276px;
+}
+.tema-2 {
+    position: absolute !important;
+    right: 180px;
+    bottom: 80px;
+}
+.tema-3 {
+    position: absolute !important;
+    bottom: 70px;
+    left: 380px;
+}
+.tema-4 {
+    position: absolute !important;
+    top: 255px;
+    left: 340px;
+}
+.tema-5 {
+    position: absolute !important;
+    top: 260px;
+    right: 300px;
+}
+.tema-6 {
+    position: absolute !important;
+    bottom: 240px;
+    right: 250px;
+}
