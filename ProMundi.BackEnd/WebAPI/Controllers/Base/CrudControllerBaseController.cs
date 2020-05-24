@@ -20,7 +20,7 @@ namespace WebAPI.Controllers.Base
             _mapper = mapper;
         }
 
-        [AllowAnonymous]
+     
         [HttpGet]
         public virtual async Task<IActionResult> GetAllAsync()
         {
@@ -28,7 +28,7 @@ namespace WebAPI.Controllers.Base
             return Ok(_mapper.Map<List<TViewModel>>(objectToGet));
         }
 
-        [AllowAnonymous]
+       
         [HttpGet("{id}")]
         public virtual IActionResult GetById(int id)
         {
