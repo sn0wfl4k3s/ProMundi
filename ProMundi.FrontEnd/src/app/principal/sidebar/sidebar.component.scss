@@ -6,12 +6,18 @@ $bg_botao_color: #dbcfdf ;
 .side-box {
     background-color:#9c8f64;
     color: #383838;
-    height: 90vh;
+    height: 100vh;
+    .search {
+        height:30vh;
+    }
     .timeline {
         display: flex;
+        height:70vh;
         .timeline-numeros {
             display: flex;
-            transform: rotate(270deg);
+            h5{
+                transform: rotate(270deg);
+            }
         }
         .timeline-linha {
             border:1px solid #383838;
