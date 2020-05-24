@@ -1,12 +1,12 @@
+import { defineLocale } from 'ngx-bootstrap/chronos';
+import { ptBrLocale } from 'ngx-bootstrap/locale';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+defineLocale('pt-br', ptBrLocale);
 
 
 @NgModule({
   imports: [
-    CommonModule
+    
   ],
-  declarations: [
-    ]
 })
 export class SharedModule { }
