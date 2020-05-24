@@ -7,29 +7,29 @@ using WebAPI.ViewModels.Tema;
 using WebAPI.ViewModels.Usuario;
 
 namespace API.AutoMapper
+{
+    public class MappingProfile : Profile
     {
-        public class MappingProfile : Profile
+        public MappingProfile()
         {
-            public MappingProfile()
-            {
-                CreateMap<Usuario, UsuarioViewModel>();
-                CreateMap<Conteudo, ConteudoViewModel>();
-                CreateMap<Comentario, ComentarioViewModel>();
-                CreateMap<Categoria, CategoriaViewModel>();
-                CreateMap<Tema, TemaViewModel>();
+            CreateMap<Usuario, UsuarioViewModel>();
+            CreateMap<Conteudo, ConteudoViewModel>();
+            CreateMap<Comentario, ComentarioViewModel>();
+            CreateMap<Categoria, CategoriaViewModel>();
+            CreateMap<Tema, TemaViewModel>();
 
-                CreateMap<UsuarioViewModel, Usuario>();
-                CreateMap<ConteudoViewModel, Conteudo>();
-                CreateMap<ComentarioViewModel, Comentario>();
-                CreateMap<CategoriaViewModel, Categoria>();
-                CreateMap<TemaViewModel, Tema>();
+            CreateMap<UsuarioViewModel, Usuario>();
+            CreateMap<ConteudoViewModel, Conteudo>();
+            CreateMap<ComentarioViewModel, Comentario>();
+            CreateMap<CategoriaViewModel, Categoria>();
+            CreateMap<TemaViewModel, Tema>();
 
-                CreateMap<UsuarioViewModelCadastro, Usuario>();
-                CreateMap<ConteudoViewModelCadastro, Conteudo>();
-                CreateMap<ComentarioViewModelCadastro, Comentario>();
-                CreateMap<CategoriaViewModelCadastro, Categoria>();
-                CreateMap<TemaViewModelCadastro, Tema>();
-        }
+            CreateMap<UsuarioViewModelCadastro, Usuario>();
+            CreateMap<ConteudoViewModelCadastro, Conteudo>();
+            CreateMap<ComentarioViewModelCadastro, Comentario>();
+            CreateMap<CategoriaViewModelCadastro, Categoria>();
+            CreateMap<TemaViewModelCadastro, Tema>();
         }
     }
+}
 

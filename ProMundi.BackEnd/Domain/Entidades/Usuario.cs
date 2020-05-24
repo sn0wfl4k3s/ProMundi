@@ -15,11 +15,11 @@ namespace Domain.Entidades
         public string Bio { get; set; }
         public string Senha { get; set; }
         public bool SeProfissional { get; set; }
-        
+
         public List<Conteudo> Conteudos { get; set; }
-        
+
         public List<Comentario> Comentarios { get; set; }
-        
-        public List<CategoriaUsuario> UsuarioCategorias { get;  set; }
+
+        public List<CategoriaUsuario> UsuarioCategorias { get; set; }
     }
 }
