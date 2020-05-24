@@ -11,12 +11,8 @@ namespace WebAPI.ViewModels.Comentario
     {
         public int Id { get; set; }
         public string Descricao { get; set; }
-
-
         public int UsuarioId { get; set; }
-        public UsuarioViewModel Usuario { get; set; }
-
         public int ConteudoId { get; set; }
-        public ConteudoViewModel Conteudo { get; set; }
+     
     }
 }
