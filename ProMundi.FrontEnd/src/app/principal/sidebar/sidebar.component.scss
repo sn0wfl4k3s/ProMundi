@@ -8,26 +8,83 @@ $bg_botao_color: #dbcfdf ;
     color: #383838;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
     .search {
         height:20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .search-box {
+            display: flex;
+            align-items: center;
+            input {
+                border:none;
+                border-radius: 10px;
+                font-size: 10px;
+            }
+            i {
+                font-size: 20px;
+                color: white;
+                margin-left: 10px;
+            }
+            i:hover{
+                cursor: pointer;
+                color:black;
+            }
+        }
     }
     .timeline {
         display: flex;
         justify-content: space-evenly;
-        height:80vh;
+        height: 200vh;
+        padding: 20px;
         .timeline-numeros {
-            background-color: blue;
+           h5 {
+                transform: rotate(270deg);
+                font-size:20px;
+           }
+           :first-child{
+                margin-top: 40px;
+           }
+           :last-child {
+                margin-top: 208px;
+                margin-right: 10px;
+           }
         }
         .timeline-linha {
             border:1px solid #383838;
         }
         .timeline-conteudos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             h5 {
                 font-size:20px;
+                position: relative;
+                margin-left: 15px;
             }
-            span {
-                font-size: 10px;
+            h5::before {
+                content:"";
+                position: absolute;
+                width:10px;
+                height: 1px;
+                border: 1px solid #383838;
+                top: 8px;
+                left: -15px;
+
+            }
+            p{
+                position: relative;
+                margin-left: 15px;
+            }
+            p::before {
+                content:"";
+                position: absolute;
+                width:10px;
+                height: 1px;
+                border: 1px solid #383838;
+                top: 8px;
+                left: -15px;
             }
         }
     }
