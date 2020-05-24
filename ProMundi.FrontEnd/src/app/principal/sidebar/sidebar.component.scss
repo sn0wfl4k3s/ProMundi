@@ -5,7 +5,7 @@ $bg_botao_color: #dbcfdf ;
 
 .side-box {
     background-color:#9c8f64;
-    color: #383838;
+    color: $texto_color;
     display: flex;
     flex-direction: column;
     height: 90vh;
@@ -29,7 +29,7 @@ $bg_botao_color: #dbcfdf ;
             }
             i:hover{
                 cursor: pointer;
-                color:black;
+                color:$texto_color;
             }
         }
     }
@@ -52,8 +52,16 @@ $bg_botao_color: #dbcfdf ;
            }
         }
         .timeline-linha {
-            border:1px solid #383838;
+            border:1px solid $texto_color;
         }
+        .timeline-linha-topo{
+            position: absolute;
+            width: 20px;
+            height: 5px;
+            background: $texto_color;
+            left: 50px;
+        }
+        
         .timeline-conteudos {
             display: flex;
             flex-direction: column;
@@ -68,7 +76,7 @@ $bg_botao_color: #dbcfdf ;
                 position: absolute;
                 width:10px;
                 height: 1px;
-                border: 1px solid #383838;
+                border: 1px solid $texto_color;
                 top: 8px;
                 left: -15px;
 
@@ -82,7 +90,7 @@ $bg_botao_color: #dbcfdf ;
                 position: absolute;
                 width:10px;
                 height: 1px;
-                border: 1px solid #383838;
+                border: 1px solid $texto_color;
                 top: 8px;
                 left: -15px;
             }
